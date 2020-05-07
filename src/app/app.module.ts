@@ -9,11 +9,17 @@ import { ButtonModule } from 'primeng/button';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
+import { MainScreenComponent } from './main-screen/main-screen.component';
+import { SidebarModule } from 'primeng/sidebar';
+import { NavbarComponent } from './navbar/navbar.component';
+import { MegaMenuModule } from 'primeng/megamenu';
 
 @NgModule({
   declarations: [
     AppComponent,
-    LoginComponent
+    LoginComponent,
+    MainScreenComponent,
+    NavbarComponent
   ],
   imports: [
     BrowserModule,
@@ -22,7 +28,9 @@ import { LoginComponent } from './login/login.component';
     InputTextModule,
     PanelModule,
     FieldsetModule,
-    ButtonModule
+    ButtonModule,
+    SidebarModule,
+    MegaMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -1,0 +1,7 @@
+<div>
+  <app-navbar position="horizontal" style="display: inline;"></app-navbar>
+  <p-button (click)="display = !display" icon="pi pi-bars"> </p-button>
+  <p-sidebar [(visible)]="display">
+    <app-navbar position="vertical"></app-navbar>
+  </p-sidebar>
+</div>
