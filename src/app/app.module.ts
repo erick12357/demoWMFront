@@ -11,15 +11,16 @@ import { AppComponent } from './app.component';
 import { LoginComponent } from './login/login.component';
 import { MainScreenComponent } from './main-screen/main-screen.component';
 import { SidebarModule } from 'primeng/sidebar';
-import { NavbarComponent } from './navbar/navbar.component';
 import { MegaMenuModule } from 'primeng/megamenu';
+import { MenubarModule } from 'primeng/menubar';
+import { PanelMenuModule } from 'primeng/panelmenu';
+
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    MainScreenComponent,
-    NavbarComponent
+    MainScreenComponent
   ],
   imports: [
     BrowserModule,
@@ -30,7 +31,9 @@ import { MegaMenuModule } from 'primeng/megamenu';
     FieldsetModule,
     ButtonModule,
     SidebarModule,
-    MegaMenuModule
+    MegaMenuModule,
+    MenubarModule,
+    PanelMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

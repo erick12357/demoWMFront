@@ -1,7 +1,12 @@
-<div>
-  <app-navbar position="horizontal" style="display: inline;"></app-navbar>
-  <p-button (click)="display = !display" icon="pi pi-bars"> </p-button>
-  <p-sidebar [(visible)]="display">
-    <app-navbar position="vertical"></app-navbar>
-  </p-sidebar>
+<div class="header">
+  <div class="header-tablet">
+    <p-button (click)="display = true" icon="pi pi-bars"> </p-button>
+    <p-sidebar [(visible)]="display">
+        <p-panelMenu [model]="items" ></p-panelMenu>
+    </p-sidebar>
+  </div>
+
+  <div class="header-desktop">
+    <p-menubar [model] = "items" ></p-menubar>
+  </div>
 </div>
