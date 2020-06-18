@@ -2,11 +2,16 @@
   <div class="header-tablet">
     <p-button (click)="display = true" icon="pi pi-bars"> </p-button>
     <p-sidebar [(visible)]="display">
-        <p-panelMenu [model]="items" ></p-panelMenu>
+        <div class="miniMenu">
+            <p-panelMenu [model]="items"></p-panelMenu>
+        </div>
     </p-sidebar>
   </div>
 
   <div class="header-desktop">
-    <p-menubar [model] = "items" ></p-menubar>
+    <p-menubar [model] = "items"></p-menubar>
   </div>
+
+  <app-work-area></app-work-area>  
+
 </div>

@@ -14,13 +14,18 @@ import { SidebarModule } from 'primeng/sidebar';
 import { MegaMenuModule } from 'primeng/megamenu';
 import { MenubarModule } from 'primeng/menubar';
 import { PanelMenuModule } from 'primeng/panelmenu';
+import { WorkAreaComponent } from './work-area/work-area.component';
+import { EjemploUnoComponent } from './ejemplo-uno/ejemplo-uno.component';
+import { DragDropModule } from 'primeng/dragdrop';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     LoginComponent,
-    MainScreenComponent
+    MainScreenComponent,
+    WorkAreaComponent,
+    EjemploUnoComponent
   ],
   imports: [
     BrowserModule,
@@ -33,9 +38,11 @@ import { PanelMenuModule } from 'primeng/panelmenu';
     SidebarModule,
     MegaMenuModule,
     MenubarModule,
-    PanelMenuModule
+    PanelMenuModule,
+    DragDropModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
+  entryComponents: [EjemploUnoComponent]
 })
 export class AppModule { }
